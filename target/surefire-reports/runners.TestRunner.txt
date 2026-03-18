@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 76.88 s <<< FAILURE! -- in runners.TestRunner
+Product - Store.Validación del precio de un producto #1 -- Time elapsed: 30.31 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(normalize-space(), 'Men')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.71, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\erosg\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51947}, goog:processID: 24468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51947/devtoo..., se:cdpVersion: 146.0.7680.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1093a426776fdea6f6c43ee4750d8763
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.click(BasePage.java:31)
+	at pages.HomePage.goToCategory(HomePage.java:26)
+	at steps.StoreSteps.navegoALaCategoriaYSubcategoria(StoreSteps.java:64)
+	at ✽.navego a la categoria "Clothes" y subcategoria "Men"(file:///C:/nnt%20data/Examen%20Web/selenium-store/src/test/resources/features/store.feature:6)
+
+Product - Store.Validación del precio de un producto #2 -- Time elapsed: 20.24 s <<< FAILURE!
+java.lang.AssertionError: Se esperaba error de autenticación
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at steps.StoreSteps.meLogueoConMiUsuarioYClave(StoreSteps.java:40)
+	at ✽.me logueo con mi usuario "usuario_invalido" y clave "clave_mala"(file:///C:/nnt%20data/Examen%20Web/selenium-store/src/test/resources/features/store.feature:5)
+

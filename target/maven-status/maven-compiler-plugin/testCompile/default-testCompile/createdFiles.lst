@@ -1,0 +1,11 @@
+pages\BasePage.class
+pages\ProductPage.class
+pages\LoginPage.class
+pages\CartPage.class
+pages\HomePage.class
+steps\StoreSteps.class
+runners\TestRunner.class
+utils\ConfigReader.class
+pages\CategoryPage.class
+hooks\Hooks.class
+utils\DriverManager.class
